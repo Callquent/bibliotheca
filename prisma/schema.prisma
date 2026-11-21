@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// type : "LIVRE" | "FILM"
+// statut : "A_FAIRE" (à lire / à voir) | "FAIT" (lu / vu)
+model Media {
+  id          Int       @id @default(autoincrement())
+  type        String
+  statut      String    @default("A_FAIRE")
+  titre       String
+  auteur      String?   // auteur (livre) ou réalisateur (film)
+  image       String?   // URL de la couverture / affiche
+  note        Int?      // 1 à 5
+  commentaire String?
+  termineLe   DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@index([type, statut])
+}
+
+model Reglage {
+  cle    String @id
+  valeur String
+}

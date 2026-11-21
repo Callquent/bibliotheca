@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Médiathèque">
+  <!-- Livre : couverture avec dos à gauche -->
+  <g transform="rotate(-10 36 47)">
+    <rect x="14" y="14" width="44" height="66" rx="5" fill="#1E6B5A"/>
+    <path d="M19 14h2v66h-2a5 5 0 0 1-5-5V19a5 5 0 0 1 5-5z" fill="#154E42"/>
+    <rect x="27" y="56" width="24" height="3" rx="1.5" fill="#fff" opacity=".55"/>
+    <rect x="27" y="63" width="16" height="3" rx="1.5" fill="#fff" opacity=".55"/>
+  </g>
+  <!-- Film : affiche avec perforations et bouton lecture -->
+  <g transform="rotate(8 60 55)">
+    <rect x="38" y="22" width="44" height="66" rx="5" fill="#9C2F52" stroke="#000" stroke-opacity=".18"/>
+    <g fill="#fff" opacity=".4">
+      <rect x="41" y="28" width="3" height="5" rx=".8"/><rect x="41" y="40" width="3" height="5" rx=".8"/>
+      <rect x="41" y="52" width="3" height="5" rx=".8"/><rect x="41" y="64" width="3" height="5" rx=".8"/>
+      <rect x="41" y="76" width="3" height="5" rx=".8"/>
+      <rect x="76" y="28" width="3" height="5" rx=".8"/><rect x="76" y="40" width="3" height="5" rx=".8"/>
+      <rect x="76" y="52" width="3" height="5" rx=".8"/><rect x="76" y="64" width="3" height="5" rx=".8"/>
+      <rect x="76" y="76" width="3" height="5" rx=".8"/>
+    </g>
+    <path d="M54 43v24l19-12z" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>
